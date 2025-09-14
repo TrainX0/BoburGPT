@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>BoburGPT English</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>BoburGPT — Учитель английского</h1>
+
+    <!-- Форма логина -->
+    <div id="login-box">
+      <input id="username" type="text" placeholder="Логин">
+      <input id="password" type="password" placeholder="Пароль (8 символов)">
+      <button onclick="login()">Войти</button>
+      <button onclick="register()">Регистрация</button>
+    </div>
+
+    <!-- Чат -->
+    <div id="chat-box" style="display:none;">
+      <div id="messages"></div>
+      <input id="msg" type="text" placeholder="Напиши сообщение...">
+      <button onclick="sendMessage()">Отправить</button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
